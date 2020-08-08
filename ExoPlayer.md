@@ -21,7 +21,16 @@ ExoPlayer是一款适用于Android的应用程序级媒体播放器。它为Andr
 implementation 'com.google.android.exoplayer:exoplayer:2.11.7'
 ```
 
-##### 2 编写界面
+##### 2.加入JAVA 1.8支持
+
+```java
+compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
+```
+
+##### 3 编写界面
 
 ```xml
 <com.google.android.exoplayer2.ui.PlayerView
@@ -35,7 +44,7 @@ implementation 'com.google.android.exoplayer:exoplayer:2.11.7'
     app:layout_constraintBottom_toTopOf="@id/playercontrol"/>
 ```
 
-##### 3 设置播放（最简单）
+##### 4 设置播放（最简单）
 
 - 1. 设置player参数，使用SimpleExoPlayer
 - 2. 设置MediaSource播放资源
@@ -199,3 +208,6 @@ public class VideoCache {
         simpleExoPlayer.setPlayWhenReady(true);
 ```
 
+###  4.GitHub小demo地址
+
+https://github.com/ONLY-yours/ExoPlayerDemo
