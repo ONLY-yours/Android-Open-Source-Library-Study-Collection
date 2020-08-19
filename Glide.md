@@ -8,7 +8,7 @@ https://github.com/bumptech/glide
 
 ### 2.加入依赖
 
-使用Gradle：
+使用Glide：
 
 ```groovy
 repositories {
